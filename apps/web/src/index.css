@@ -1,6 +1,42 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-50: #ecfdfb;
+  --color-brand-100: #ccfbf1;
+  --color-brand-400: #2dd4bf;
+  --color-brand-500: #14b8a6;
+  --color-brand-600: #0d9488;
+  --color-brand-700: #0f766e;
+
+  --color-coral-50: #fff1f2;
+  --color-coral-100: #ffe4e6;
+  --color-coral-400: #fb7185;
+  --color-coral-500: #f97376;
+  --color-coral-600: #ef5c61;
+
+  --color-app-bg: #070b0d;
+  --color-app-surface: #0d1316;
+  --color-app-card: #11181c;
+  --color-app-border: rgba(255, 255, 255, 0.08);
+
+  --color-heading: #f8fafc;
+  --color-muted: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html {
+  scroll-behavior: smooth;
+  background: #070b0d;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #f8fafc;
   font-family:
     Inter,
     system-ui,
@@ -8,12 +44,42 @@ html {
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(20, 184, 166, 0.12), transparent 28%),
+    radial-gradient(circle at 85% 20%, rgba(249, 115, 118, 0.1), transparent 25%),
+    radial-gradient(circle at 50% 100%, rgba(20, 184, 166, 0.05), transparent 32%),
+    #070b0d;
+  background-attachment: fixed;
 }
 
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  background: #f8fafc;
-  color: #0f172a;
+button,
+a,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: rgba(20, 184, 166, 0.28);
+  color: white;
+}
+
+.glass {
+  background: rgba(17, 24, 28, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-soft {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
