@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# Build output
+dist/
+build/
+.next/
+.expo/
+web-build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Testing
+coverage/
+
+# Cache
+.cache/
+.vite/
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+
+# Mobile generated folders
+android/
+ios/
+
+# Temporary files
+*.tmp
+*.temp
